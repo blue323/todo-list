@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="style.css" rel="stylesheet">
+        <script src="index.js" defer></script>
+        <title>Todo List</title>
+    </head>
+    <body>
+        <h1>Todo List</h1>
+        <div class="content">
+            <div class="projects-bar">
+                <h2>Projects</h2>
+                <button class="open-project-form">Add new Project</button>
+                <div class="project-form">
+                    <input type="text" id="project-name" placeholder="Project Name"><br>
+                    <input type="text" id="project-description" placeholder="Project Description"><br>
+                    <button class="add-project">Add</button>
+                    <button class="cancel-project">Cancel</button>
+                </div>
+                <ul class="projects-list"></ul>
+            </div>
+            <div class="tasks-bar">
+                <div class="task-content">
+                    <h3 class="project-name">Project: </h3>
+                    <p class="project-description">Description: </p>
+                    <button class="open-task-form">Add new task</button>
+                    <div class="task-form">
+                        <input type="text" id="task-name" placeholder="Task Name" value="">
+                        <select id="task-priority">
+                            <option value="">-Task Priority-</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                        <input type="date" id="task-date" value="">
+                        <button class="add-task">Add</button>
+                        <button class="cancel-task">Cancel</button>
+                    </div>
+                    <ul class="tasks-list"></ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
